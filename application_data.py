@@ -4,7 +4,7 @@ Spyder Editor
 
 
 """
-from flask import Flask,render_template,request
+from flask import Flask,render_template,request,redirect
 
 import os
 from Quandl import Quandl
