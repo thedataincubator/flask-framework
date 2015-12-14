@@ -14,6 +14,7 @@ import tempfile
 import matplotlib
 import matplotlib.pyplot as plt
 matplotlib.use('Agg')
+app=Flask(__name__)
 app_data = Flask(__name__)
 app_data.vars={}
 
