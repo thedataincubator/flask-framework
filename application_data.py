@@ -9,7 +9,7 @@ from flask import Flask,render_template,request
 import os
 from Quandl import Quandl
 import time
-import numpy as np
+#import numpy as np
 import tempfile
 import matplotlib
 import matplotlib.pyplot as plt
