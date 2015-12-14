@@ -14,13 +14,13 @@ import tempfile
 import matplotlib
 import matplotlib.pyplot as plt
 matplotlib.use('Agg')
-app=Flask(__name__)
+
 app_data = Flask(__name__)
 app_data.vars={}
 
-@app.route('/')
+@app_data.route('/')
 def main():
- return redirect('index_data')
+    return redirect('index_data')
 
 @app_data.route('/index_data',methods=['GET','POST'])
 
