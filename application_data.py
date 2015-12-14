@@ -62,6 +62,8 @@ def index_data():
 
 
 if __name__ == '__main__':
-
-     app_data.run(port=33507)
+  port = int(os.environ.get("PORT", 5000))
+  app_data.run(host='0.0.0.0', port=port)
+#	app_data.run(port=33507)
+#     app_data.run(port=33507)
 
