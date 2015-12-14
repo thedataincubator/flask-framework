@@ -1,0 +1,23 @@
+<!doctype html>
+<title>User Input</title>
+<link rel=stylesheet type=text/css href='{{ url_for('static',filename='style_data.css')}}'>
+<div class=page>
+  <h1>User input</h1>
+  <div class=metanav>
+
+<h2>
+Please enter a stock ticker eg. GOOG, and check desired features.
+</h2>
+
+<form id='userinfoform_data' method='post' action='index_data' > <!-- action is the URL you want to move to next-->
+   <p>
+   Stock: <input type='text' name='stock_data' />
+   </p>
+  
+   <p>
+   <input type='submit' value='Submit_data' /> <!-- value is the text that will appear on the button. -->
+   </p>
+</form>
+
+</div>
+</div>
