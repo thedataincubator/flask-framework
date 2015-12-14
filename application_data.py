@@ -17,7 +17,12 @@ matplotlib.use('Agg')
 app_data = Flask(__name__)
 app_data.vars={}
 
+@app.route('/')
+def main():
+ return redirect('index_data')
+
 @app_data.route('/index_data',methods=['GET','POST'])
+
 def index_data():
     
   
