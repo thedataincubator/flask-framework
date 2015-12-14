@@ -1,1 +1,1 @@
-web: python dealscraper/application_data.py
+web:python application_data.py
