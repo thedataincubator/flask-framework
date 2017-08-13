@@ -20,6 +20,7 @@ A [finished example](https://lemurian.herokuapp.com) that demonstrates some basi
   If you choose not to, put all requirements into `requirements.txt`
 
   `heroku config:add BUILDPACK_URL=https://github.com/kennethreitz/conda-buildpack.git`
+
   The advantages of conda include easier virtual environment management and fast package installation from binaries (as compared to the compilation that pip-installed packages sometimes require).
   One disadvantage is that binaries take up a lot of memory, and the slug pushed to Heroku is limited to 300 MB. Another note is that the conda buildpack is being deprecated in favor of a Docker solution.
 - Deploy to Heroku: `git push heroku master`
