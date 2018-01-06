@@ -12,12 +12,11 @@ We will use docker to create a container which allows us to use a wider variety 
 A [finished example](https://lemurian.herokuapp.com) that demonstrates some basic functionality.
 
 ## Step 1: Setup and deploy
-- You will probably want to do this on your DO box where Docker is already installed.  If you want to do this locally, you can look up how to install docker here [Docer Documentation](https://docs.docker.com/engine/installation/)
+- You will probably want to do this on your DO box where Docker is easy to install. Look up how to install docker here [Docker Documentation](https://docs.docker.com/engine/installation/)
 - Git clone the existing template repository.
-`app/requirements.txt` and `app/conda-requirements.txt`  contain some default settings.
+`app/requirements.txt` and `app/conda-requirements.txt`  contain some default settings which will be installed by `pip` and `conda` respectively.
 - There is some boilerplate HTML in `app/templates/`
-- Create Heroku application with `heroku create <app_name>` or leave blank to
-  auto-generate a name.
+- Create Heroku application with `heroku create <app_name>` or leave blank to auto-generate a name.
 - Login to container with `heroku container:login`
 - Deploy to Heroku: `heroku container:push web`
 - You should be able to see your site at `https://<app_name>.herokuapp.com`
