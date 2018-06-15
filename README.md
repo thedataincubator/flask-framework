@@ -19,6 +19,7 @@ A [finished example](https://lemurian.herokuapp.com) that demonstrates some basi
 - Create Heroku application with `heroku create <app_name>` or leave blank to auto-generate a name.
 - Login to container with `heroku container:login`
 - Deploy to Heroku: `heroku container:push web`
+- Release image on Heroku: `heroku container:release web`
 - You should be able to see your site at `https://<app_name>.herokuapp.com`
 - A useful reference is the Heroku [quickstart guide](https://devcenter.heroku.com/articles/getting-started-with-python-o).
 
