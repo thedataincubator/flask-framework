@@ -24,8 +24,7 @@ A [finished example](https://lemurian.herokuapp.com) that demonstrates some basi
 - A useful reference is the Heroku [quickstart guide](https://devcenter.heroku.com/articles/getting-started-with-python-o).
 
 ## Step 2: Get data from API and put it in pandas
-- Use the `requests` library to grab some data from a public API. This will
-  often be in JSON format, in which case `simplejson` will be useful.
+- Use the `requests` library to grab some data from a public API. This will often be in JSON format, in which case `simplejson` will be useful.
 - Build in some interactivity by having the user submit a form which determines which data is requested.
 - Create a `pandas` dataframe with the data.
 
