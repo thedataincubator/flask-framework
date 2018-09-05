@@ -1,8 +1,7 @@
 from flask import Flask, render_template, request, redirect
 import requests
 import pandas as pd
-from bokeh.io import output_file, show
-from bokeh.plotting import figure, reset_output
+from bokeh.plotting import figure
 from bokeh.embed import components 
 
 app = Flask(__name__)
@@ -58,10 +57,8 @@ def plot():
         
     p.line(input_df.index, input_df[metric])
     script, div = components(p)
-    return render_template('about.html', script=script, div=div)
-    
-    #return render_template('about.html')
-    #reset_output()
+    return render_template('plot.html', script=script, div=div)
+
 
 if __name__ == '__main__':
   app.run(port=33507)
