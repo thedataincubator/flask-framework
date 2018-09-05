@@ -8,7 +8,8 @@ app = Flask(__name__)
 
 @app.route('/',methods=['GET','POST'])
 def index():
-    return render_template('user_inputs_new.html')
+    if request.method == 'GET':
+        return render_template('user_inputs_new.html')
 
 @app.route('/about')
 def about():
