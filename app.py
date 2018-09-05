@@ -3,6 +3,7 @@ import requests
 import pandas as pd
 from bokeh.io import output_file, show
 from bokeh.plotting import figure, reset_output
+from bokeh.embed import components 
 
 app = Flask(__name__)
 
@@ -56,8 +57,10 @@ def plot():
     p.yaxis.axis_label = 'Value'
         
     p.line(input_df.index, input_df[metric])
+    script, div = components(p)
+    return render_template('about.html', script=script, div=div)
     
-    return render_template('about.html')
+    #return render_template('about.html')
     #reset_output()
 
 if __name__ == '__main__':
