@@ -6,7 +6,7 @@ from bokeh.plotting import figure, reset_output
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/',methods=['GET','POST'])
 def index():
   return render_template('user_inputs_new.html')
 
