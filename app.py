@@ -1,17 +1,10 @@
 from flask import Flask, render_template, request, redirect
-import requests
-import pandas as pd
-from bokeh.io import output_file, show
-from bokeh.plotting import figure, reset_output
-
-
 
 app = Flask(__name__)
 
-@app.route('/index',methods=['GET','POST'])
+@app.route('/')
 def index():
-    if request.method == 'GET':
-        return render_template('user_inputs_new.html')
+  return render_template('index.html')
 
 @app.route('/about')
 def about():
