@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Skeleton application demoing Heroku and Flask integration.">
+    <meta name="author" content="@gotoariel">
+    <!-- <link rel="icon" href="favicon.ico"> -->
+
+    <title>Wilkommen, bienvenue, and welcome to Heroku!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-left">
+            <h2>
+                Stock Ticker Plotting Tool
+            </h2>
+            <h4>
+                Input values for options below:
+            </h4>
+            
+            <form id='user_inputs' method='post' action='plot' > <!-- action is the URL you want to move to next-->
+                <p>
+                Ticker Symbol: <input type='text' name='ticker_symbol' />
+                </p>
+                <p>
+                Start Date (YYYY-MM-DD): <input type='text' name='start_date' />
+                </p>
+                <p>
+                End Date (YYYY-MM-DD): <input type='text' name='end_date' />
+                </p>
+                <p>
+                Plotting Metric:<br />
+                Open <input type='radio' name='metric' value='open' /> <br />
+                High <input type='radio' name='metric' value='high' /> <br />
+                Low <input type='radio' name='metric' value='low' /> <br />
+                Close <input type='radio' name='metric' value='close' /> <br />
+                Volume <input type='radio' name='metric' value='volume' /> <br />
+                Ex-Dividend <input type='radio' name='metric' value='ex-dividend' /> <br />
+                Split-Ratio <input type='radio' name='metric' value='split_ratio' /> <br />
+                Adj. Open <input type='radio' name='metric' value='adj_open' /> <br />
+                Adj. High<input type='radio' name='metric' value='adj_high' /> <br />
+                Adj. Low <input type='radio' name='metric' value='adj_low' /> <br />
+                Adj. Close <input type='radio' name='metric' value='adj_close' /> <br />
+                Adj. Volume <input type='radio' name='metric' value='adj_volume' /> <br />
+                </p>
+                <p>
+                <input type='submit' value='Submit' /> <!-- value is the text that will appear on the button. -->
+                </p>
+            </form>        </div>
+      </div>
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
