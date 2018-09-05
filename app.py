@@ -56,8 +56,8 @@ def plot():
     p.yaxis.axis_label = 'Value'
         
     p.line(input_df.index, input_df[metric])
-    show(p)
-    return render_template('stock_plot.html')
+    
+    return render_template('about.html')
     #reset_output()
 
 if __name__ == '__main__':
