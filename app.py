@@ -6,12 +6,10 @@ from bokeh.plotting import figure, reset_output
 
 app = Flask(__name__)
 
-@app.route('/',methods=['GET','POST']) # http://127.0.0.1:33507/index
+@app.route('/') # http://127.0.0.1:33507/index
 def index():
-    if request.method == 'GET':
-        return render_template('user_inputs2.html')
-    else:
-        return 'Error'
+    return render_template('user_inputs2.html')
+    
     
 @app.route('/about')
 def about():
