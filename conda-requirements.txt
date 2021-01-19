@@ -1,4 +1,6 @@
 pandas
+altair
+plotly
 bokeh
 dill
 flask
