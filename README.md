@@ -16,13 +16,6 @@ A [finished example](https://lemurian.herokuapp.com) that demonstrates some basi
 - There is some boilerplate HTML in `templates/`
 - Create Heroku application with `heroku create <app_name>` or leave blank to
   auto-generate a name.
-- (Suggested) Use the [conda buildpack](https://github.com/thedataincubator/conda-buildpack).
-  If you choose not to, put all requirements into `requirements.txt`
-
-  `heroku config:add BUILDPACK_URL=https://github.com/thedataincubator/conda-buildpack.git#py3`
-
-  The advantages of conda include easier virtual environment management and fast package installation from binaries (as compared to the compilation that pip-installed packages sometimes require).
-  One disadvantage is that binaries take up a lot of memory, and the slug pushed to Heroku is limited to 300 MB. Another note is that the conda buildpack is being deprecated in favor of a Docker solution (see [docker branch](https://github.com/thedataincubator/flask-framework/tree/docker) of this repo for an example).
 - Deploy to Heroku: `git push heroku master`
 - You should be able to see your site at `https://<app_name>.herokuapp.com`
 - A useful reference is the Heroku [quickstart guide](https://devcenter.heroku.com/articles/getting-started-with-python-o).
