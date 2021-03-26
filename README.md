@@ -18,7 +18,7 @@ A [finished example](https://lemurian.herokuapp.com) that demonstrates some basi
   auto-generate a name.
 - Deploy to Heroku: `git push heroku master`
 - You should be able to see your site at `https://<app_name>.herokuapp.com`
-- A useful reference is the Heroku [quickstart guide](https://devcenter.heroku.com/articles/getting-started-with-python-o).
+- A useful reference is the Heroku [quickstart guide](https://devcenter.heroku.com/articles/getting-started-with-python).
 
 ## Step 2: Get data from API and put it in pandas
 - Use the `requests` library to grab some data from a public API. This will
