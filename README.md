@@ -7,7 +7,7 @@ website on Render.com.
 
 There are several branches on this repository.  The `master` branch is a simple
 Flask application to show a static websitpe.  The 
-[finished example](https://flask-framewy1ork.onrender.com) is available 
+[finished example](https://flask-framework.onrender.com) is available 
 online that demonstrates this basic website.
 
 The repository contains a basic template for a Flask configuration that will
