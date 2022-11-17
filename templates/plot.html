@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.17.0"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+      <h2>Stock ticker data</h2>
+      <div id="vis">
+        <script>
+          var spec = {{ chart | safe }};
+          vegaEmbed("#vis", spec);
+        </script>
+      </div>
+    </div>
+      
+{% endblock %}

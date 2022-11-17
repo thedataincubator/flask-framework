@@ -1,19 +1,29 @@
 {% extends "base.html" %}
 
+{% block head %}
+    <title>Ticker Lookup App</title>
+{% endblock %}
+
 {% block content %}
-      <div class="row">
-        <div class="col-lg-12 text-left">
-          <h2>Hello World!</h2>
-          <ul>
-            <li><a href="/about">About</a></li>
-            <li><a href="http://flask.pocoo.org/">Flask</a> (one of the main Python libraries for writing web applications)</li>
-            <li><a href="http://jinja.pocoo.org/">Jinja2</a> (a templating engine)</li>
-            <li><a href="http://getbootstrap.com/">Bootstrap</a> (a front end toolkit to help easily design your website)</li>
-            <li><a href="http://jquery.com/">jQuery</a> (if you're going to use JavaScript on a website, you probably want to use jQuery)</li>
-            <li><a href="https://www.render.com/">Render.com</a> (a site we recommend for free (and paid) web hosting services)</li>
-            <li><a href="https://www.elephantsql.com/">ElephantSQL</a> (a site we recommend for free (and paid) SQL hosting services)</li>
-          </ul>
-        </div>
-      </div>
+    <p>Welcome to the Ticker Lookup App!  <br>
+       You should input a stock symbol, and select one or more
+       of the check boxes given to display the stock prices for
+       the last month. <br>
+    </p>
+      
+    <form action="plot" method="POST">
+    <p><label for="ticker">Ticker symbol:</label>
+       <input type="text" id="ticker" name="closing"/> <br>
+       <input type="checkbox" id="closing" name="closing" value="closing"/>
+       <label for="closing">Closing price</label> <br>
+       <input type="checkbox" id="adjusted_closing" name="adjusted_closing" value="adjusted_closing"/>
+       <label for="adjusted">Adjusted closing price</label> <br>
+       <input type="checkbox" id="opening" name="opening" value="opening"/>
+       <label for="opening">Opening price</label> <br>
+       <input type="checkbox" id="adjusted_opening" name="adjusted_opening" value="adjusted_opening"/>
+       <label for="adjusted_opening">Adjusted opening price</label> <br>
+       <input type="reset"/> <input type="submit"/>
+    </p>
+    </form>
 
 {% endblock %}
