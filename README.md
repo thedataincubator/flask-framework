@@ -1,24 +1,24 @@
-# Flask on Heroku
+# Flask on Render 
 
 This project is intended to help you tie together some important concepts and
 technologies from the 12-day course, including Git, Flask, JSON, Pandas,
-Requests, Heroku, and Bokeh for visualization.
+Requests, and Bokeh for visualization.  We are hosting our version of this 
+website on Render.com
 
 The repository contains a basic template for a Flask configuration that will
-work on Heroku.
+work on Render.com.
 
 A [finished example](https://lemurian.herokuapp.com) that demonstrates some basic functionality.
 
 ## Step 1: Setup and deploy
 - Git clone the existing template repository.
-- `Procfile`, `requirements.txt`, `conda-requirements.txt`, and `runtime.txt`
-  contain some default settings.
-- There is some boilerplate HTML in `templates/`
-- Create Heroku application with `heroku create <app_name>` or leave blank to
-  auto-generate a name.
-- Deploy to Heroku: `git push heroku master`
-- You should be able to see your site at `https://<app_name>.herokuapp.com`
-- A useful reference is the Heroku [quickstart guide](https://devcenter.heroku.com/articles/getting-started-with-python).
+- `requirements.txt` contains some necessary libraries.
+-  We know that this will run in Python version 3.9.0.
+- There is some boilerplate HTML code in `templates/`.
+- Create the Render.com application through the main dashboard (you want a new "Web Service").
+- Specify the Python version by adding an environmental variable called `PYTHON_VERSION` with a value of 3.9.0.
+- Once deployed, use the web link provided on the Dahsboard to view the website online.  
+- A useful reference is the Render.com [quickstart guide](https://render.com/docs/deploy-flask).
 
 ## Step 2: Get data from API and put it in pandas
 - Use the `requests` library to grab some data from a public API. This will
