@@ -13,15 +13,17 @@
       
     <form action="plot" method="POST">
     <p><label for="ticker">Ticker symbol:</label>
-       <input type="text" id="ticker" name="closing"/> <br>
-       <input type="checkbox" id="closing" name="closing" value="closing"/>
-       <label for="closing">Closing price</label> <br>
-       <input type="checkbox" id="adjusted_closing" name="adjusted_closing" value="adjusted_closing"/>
-       <label for="adjusted">Adjusted closing price</label> <br>
-       <input type="checkbox" id="opening" name="opening" value="opening"/>
-       <label for="opening">Opening price</label> <br>
-       <input type="checkbox" id="adjusted_opening" name="adjusted_opening" value="adjusted_opening"/>
-       <label for="adjusted_opening">Adjusted opening price</label> <br>
+       <input type="text" id="ticker" name="ticker"/> <br>
+       <input type="checkbox" id="Open" name="Open" value="Open"/>
+       <label for="Open">Opening price</label> <br>
+       <input type="checkbox" id="Close" name="Close" value="Close"/>
+       <label for="Close">Closing price</label> <br>
+       <input type="checkbox" id="Adjusted_closing" name="Adjusted_closing" value="Adjusted_closing"/>
+       <label for="Adjusted_closing">Adjusted closing price</label> <br>
+       <input type="checkbox" id="High" name="High" value="High"/>
+       <label for="High">High</label> <br>
+       <input type="checkbox" id="Low" name="Low" value="Low"/>
+       <label for="Low">Low</label> <br><br>
        <input type="reset"/> <input type="submit"/>
     </p>
     </form>
