@@ -8,21 +8,21 @@
     <p>Welcome to the Ticker Lookup App!  <br>
        You should input a stock symbol, and select one or more
        of the check boxes given to display the stock prices for
-       the last month. <br>
+       the last 100 days. <br>
     </p>
       
     <form action="plot" method="POST">
-    <p><label for="ticker">Ticker symbol:</label>
-       <input type="text" id="ticker" name="ticker"/> <br>
-       <input type="checkbox" id="Open" name="Open" value="Open"/>
+    <p><label for="Symbol">Ticker symbol:</label>
+       <input type="text" id="Symbol" name="Symbol" value="HAS"/> <br>
+       <input type="checkbox" id="Open" name="Open"/>
        <label for="Open">Opening price</label> <br>
-       <input type="checkbox" id="Close" name="Close" value="Close"/>
+       <input type="checkbox" id="Close" name="Close" checked/>
        <label for="Close">Closing price</label> <br>
-       <input type="checkbox" id="Adjusted_closing" name="Adjusted_closing" value="Adjusted_closing"/>
-       <label for="Adjusted_closing">Adjusted closing price</label> <br>
-       <input type="checkbox" id="High" name="High" value="High"/>
+       <input type="checkbox" id="Adjusted Close" name="Adjusted Close"/>
+       <label for="Adjusted Close">Adjusted closing price</label> <br>
+       <input type="checkbox" id="High" name="High"/>
        <label for="High">High</label> <br>
-       <input type="checkbox" id="Low" name="Low" value="Low"/>
+       <input type="checkbox" id="Low" name="Low"/>
        <label for="Low">Low</label> <br><br>
        <input type="reset"/> <input type="submit"/>
     </p>
