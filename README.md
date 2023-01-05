@@ -1,6 +1,6 @@
 # Flask on Render.com 
 
-This project is intended to help you tie together some important concepts and technologies from the 12-day course, including Git, Flask, JSON, Pandas, Requests, and Bokeh for visualization.  We are hosting our version of this website on Render.com.
+This project is intended to help you tie together some important concepts and technologies from the 12-day course, including Git, Flask, JSON, Pandas, Requests, and Altair for visualization.  We are hosting our version of this website on Render.com.
 
 There are two branches on this repository.  The `master` branch is a simple Flask application to show a static websitpe.  The [finished example](https://flask-framework.onrender.com) is available online that demonstrates this basic website.
 
